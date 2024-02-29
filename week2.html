@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link href="profile.css" rel="stylesheet">
+  <script charset="utf-8" src="chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+
+</head>
+
+<body>
+<div>
+<div class="row">
+  <div class="column1" style="width :37%">
+  <div class="column">
+    <div class="card" style="position: relative;">
+      
+    
+      <div class="image_hust" >
+        <img class="image1" src="https://i1-vnexpress.vnecdn.net/2021/10/14/BKphoto-edit-Final-8691-1634193916.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=Y9N9r7xbc7qKL0lVK6aY4g" alt="Avatar" style="width:100%">
+      </div>
+      
+      
+      <div class="box-card" style="position: relative;">
+
+        <div class="image2" style="z-index:1; height: 120px; width: 120px;">
+          <img src="3X3.jpg" alt="Avatar" style="width:100%">
+        </div>
+      </div>
+      
+      <div class="container1" style="margin-top: 10px;margin-left:-16px; line-height: 2; text-align: left;overflow-wrap: anywhere;font-size: smaller;">
+        MSSV: 20214948
+        <br>
+        Họ tên: Đỗ Mạnh Cường
+        <br>
+        Lớp CTTT An toàn không gian số 01-K66
+        <br>
+        Email: cuong.dm214948@sis.hust.edu.vn
+        <br>
+        <a target="_blank" href="https://github.com/cuong-dm214948">Link to Github</a>
+        <br>
+        <a target="_blank" href="https://www.facebook.com/domanhcuong0307">Link to Facebook</a>
+      </div>
+      
+    
+    
+    </div>
+  </div>
+
+  <div class="column">
+  <div class="card">
+
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'trangthai')">Trạng thái</button>
+        <button class="tablinks" onclick="openCity(event, 'quanli')">Quản lí</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="trangthai" class="tabcontent" style="overflow-wrap: anywhere;font-size: smaller;">
+        <ul>
+          <li>Trạng thái học tập: <strong style="color:rgb(0,150,136);">Học</strong></li>
+          <li>CPA: 2.95</li>
+          <li>Số tín chỉ nợ: 0 TC</li>
+          <li>Số tín chỉ tích lũy: 61 TC</li>
+          <li>Mức cảnh cáo: M0</li>
+          <li>Trình độ: 2</li>
+        </ul>
+      </div>
+
+      <div id="quanli" class="tabcontent" style="word-wrap: break-word;">
+        <ul>
+          <li>
+            Cán bộ quản lí:
+            <i style="color:rgb(34,153,221);"> van.tongvan@hust.edu.vn</i>
+             
+          </li>
+          <li>
+            <i style="color:red;">SOICT</i>
+            
+          </li>
+        </ul>
+        
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        // Display the content of the first button when the page loads
+        document.getElementById("trangthai").style.display = "block";
+        document.querySelector(".tab button").classList.add("active");
+        });
+
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+      </script>      
+  </div> 
+  </div>
+  </div>
+
+  <div class="column1" style="width :63%; height: 780px;">
+  <div class="card">
+    <div class="tab">
+      <button class="tablinks1 active" onclick="openCity1(event, 'lylich')">Lý lịch</button>
+      <button class="tablinks1" onclick="openCity1(event, 'quyetdinh')">Quyết định</button>
+      <button class="tablinks1" onclick="openCity1(event, 'khenthuong')">Khen thưởng</button>
+      <button class="tablinks1" onclick="openCity1(event, 'lienhe')">Liên hệ</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="lylich" class="tabcontent1" style="display: block;">
+     
+      <h4 style="font-weight:bold;">Thông tin cá nhân</h4>
+       
+      <div class="container"  style="position:relative;margin-left:-20px; margin-right:-10px;">
+
+        <div class="item" style="padding-left: 1px; padding-right: 1px;">
+          <ul>
+            <li>Ngày sinh: 03/07/2003</li>
+            <li>Số CMTND: 001203048852</li>
+            <li>Dân tộc: Kinh</li>
+            <li>Ngày vào Đoàn:</li>
+          </ul>
+        </div>
+
+        <div class="item"   style="padding-left: 1px; padding-right: 1px;">
+          <ul>
+            <li>Nơi sinh: Hà Nội</li>
+            <li>Tôn giáo: Không</li>
+            <li>Ngày vào Đảng:</li>          
+          </ul>
+        </div>
+
+        <div class="item"   style="padding-left: 1px; padding-right: 1px;">
+          <ul>
+            <li>Giới tính: Nam</li>
+            <li>Ngày cấp:</li>
+            <li>Chi đoàn:</li>          
+          </ul>
+        </div>
+
+        <div class="item"   style="padding-left: 1px; padding-right: 1px;">
+          <ul>
+            <li>Đối tượng chính sách</li>
+            <li>Số thẻ bảo hiểm</li>
+            <li>Địa chỉ thường trú</li>
+            <li>Nơi ở hiện tại</li>          
+          </ul>
+        </div>
+
+      </div>
+      
+      <hr>
+
+      <h4 style="font-weight: bold;">Thông tin gia đình</h4>
+
+      <p style="padding-left:10px; font-weight:bold;">
+      Họ tên cha:</p>
+
+      <div class="container">
+        <div class="item"   style="padding-left:1px">
+        <ul>
+          <li>Dân tộc</li>
+          <li>Nơi làm việc</li>
+          <li>Địa chỉ thường trú</li>
+          <li>Liên hệ</li>
+        </ul>
+        </div>
+        <div class="item"  style="padding-left:1px">
+        <ul>
+          <li>Năm sinh</li>
+          <li>Tôn giáo</li>
+        </ul>
+        </div>
+        <div class="item"  style="padding-left:1px">
+          <ul>
+            <li>Quốc tịch</li>
+            <li>Nghề nghiệp</li>
+          </ul>
+        </div> 
+      </div>
+
+      <p style="padding-left:10px; padding-top:10px; font-weight:bold;">
+        Họ tên mẹ:</p>
+
+        <div class="container" >
+          <div class="item"  style="padding-left:1px">
+          <ul>
+            <li>Dân tộc</li>
+            <li>Nơi làm việc</li>
+            <li>Địa chỉ thường trú</li>
+            <li>Liên hệ</li>
+          </ul>
+          </div>
+          <div class="item"  style="padding-left:1px">
+          <ul>
+            <li>Năm sinh</li>
+            <li>Tôn giáo</li>
+          </ul>
+          </div>
+          <div class="item"  style="padding-left:1px">
+            <ul>
+              <li>Quốc tịch</li>
+              <li>Nghề nghiệp</li>
+              <li>Địa chỉ thường trú</li>
+            </ul>
+          </div>
+        </div>
+      <p style="padding-left:10px; padding-top:10px; font-weight:bold;">
+        Thông tin người thân khác </p>
+    </div>
+
+    <div id="quyetdinh" class="tabcontent1" style="display: none;">
+      <p>none</p>
+    </div>
+
+    <div id="khenthuong" class="tabcontent1" style="display: none;">
+      <p>done</p>
+    </div>
+
+    <div id="lienhe" class="tabcontent1" style="display: none;">
+      <p>gone</p>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Display the content of the first button when the page loads
+        document.getElementById("lylich").style.display = "block";
+        document.querySelector(".tab button").classList.add("active");
+      });
+      
+      function openCity1(evt, cityName) {
+        var i, tabcontent1, tablinks1;
+        tabcontent1 = document.getElementsByClassName("tabcontent1");
+        for (i = 0; i < tabcontent1.length; i++) {
+          tabcontent1[i].style.display = "none";
+        }
+        tablinks1 = document.getElementsByClassName("tablinks1");
+        for (i = 0; i < tablinks1.length; i++) {
+          tablinks1[i].classList.remove("active");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.classList.add("active");
+      }
+      </script>
+  </div>
+  </div>
+</div>
+
+<hr>
+
+
+<div style="overflow: hidden;">
+
+  <div class="chart" style="float:left; width: 50%; height: 400px; -webkit-tap-highlight-color: transparent; user-select: none;">
+    <canvas id="chartId" style="width: 100%; height: 100%; -webkit-tap-highlight-color: transparent; user-select: none;"></canvas>
+  </div>
+
+  <div class="chart" style="float:left; width: 50%; height: 400px; -webkit-tap-highlight-color: transparent; user-select: none;">
+    <canvas id="myChart" style="width: 100%; height: 100%; -webkit-tap-highlight-color: transparent; user-select: none;"></canvas>
+  </div>
+
+  <script src="chart.js"></script>
+</div>
+
+</div>
+
+</body>
+</html>
